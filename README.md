@@ -5,6 +5,8 @@
 A zero-dependency, fully local linter for `CLAUDE.md`, `AGENTS.md`, `MEMORY.md` and memory folders.
 No AI calls, no cloud, no config. One file.
 
+![memrot demo](demo.png)
+
 ```
 $ npx memrot ~/.claude/projects/me/memory
 

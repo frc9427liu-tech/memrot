@@ -15,6 +15,7 @@ for (let i = 0; i < args.length; i++) {
   else if (a === '--all') opt.all = true;
   else if (a === '--fix') opt.fix = true;
   else if (a === '--no-color') opt.color = false;
+  else if (a === '--color') opt.color = true;
   else if (a === '-h' || a === '--help') { help(); process.exit(0); }
   else opt.paths.push(a);
 }
