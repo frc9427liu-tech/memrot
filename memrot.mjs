@@ -66,10 +66,10 @@ const rel = f => path.relative(process.cwd(), f) || f;
 
 const baseIdx = new Set(); let idxN = 0;
 (function idx(d, depth) {
-  if (depth > 6 || idxN > 60000) return;
+  if (depth > 10 || idxN > 200000) return;
   let es; try { es = fs.readdirSync(d, { withFileTypes: true }); } catch { return; }
   for (const e of es) {
-    if (e.name === 'node_modules' || e.name === '.git') continue;
+    if (SKIP.has(e.name)) continue;
     idxN++; baseIdx.add(e.name.toLowerCase());
     if (e.isDirectory()) idx(path.join(d, e.name), depth + 1);
   }
