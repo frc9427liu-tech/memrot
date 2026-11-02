@@ -1,10 +1,30 @@
 {
   "name": "@leokai0322/memrot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find stale, contradictory and bloated memory in CLAUDE.md / AGENTS.md / MEMORY.md. Zero dependencies, fully local, no AI calls.",
-  "bin": { "memrot": "memrot.mjs" },
+  "bin": {
+    "memrot": "memrot.mjs"
+  },
   "type": "module",
-  "engines": { "node": ">=18" },
-  "keywords": ["claude-code", "agents-md", "claude-md", "ai-agent", "memory", "linter", "context-engineering"],
-  "license": "MIT"
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "agents-md",
+    "claude-md",
+    "ai-agent",
+    "memory",
+    "linter",
+    "context-engineering"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frc9427liu-tech/memrot.git"
+  },
+  "homepage": "https://github.com/frc9427liu-tech/memrot#readme",
+  "bugs": {
+    "url": "https://github.com/frc9427liu-tech/memrot/issues"
+  }
 }

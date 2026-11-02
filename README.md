@@ -5,7 +5,7 @@
 A zero-dependency, fully local linter for `CLAUDE.md`, `AGENTS.md`, `MEMORY.md` and memory folders.
 No AI calls, no cloud, no config. One file.
 
-![memrot demo](demo.gif)
+![memrot demo](https://raw.githubusercontent.com/frc9427liu-tech/memrot/main/demo.gif)
 
 ## Why
 
