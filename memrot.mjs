@@ -36,12 +36,13 @@ const red = s => c(31, s), yellow = s => c(33, s), dim = s => c(2, s), bold = s 
 
 // ---------- collect files ----------
 const NAMES = ['CLAUDE.md', 'AGENTS.md', 'GEMINI.md', 'MEMORY.md', '.cursorrules', 'copilot-instructions.md'];
+const SKIP = new Set(['node_modules', '.git', 'Build', 'build', 'dist', 'Library', 'Temp', 'obj', 'bin', 'out', '.venv', 'venv', '__pycache__', 'target']);
 function walk(p, out, depth = 0) {
   let st; try { st = fs.statSync(p); } catch { return; }
-  if (st.isFile()) { if (/\.(md|mdc|txt)$/i.test(p) || NAMES.includes(path.basename(p))) out.add(path.resolve(p)); return; }
+  if (st.isFile()) { if (/\.(md|mdc|mdx|markdown)$/i.test(p) || NAMES.includes(path.basename(p))) out.add(path.resolve(p)); return; }
   if (!st.isDirectory() || depth > 3) return;
   for (const e of fs.readdirSync(p)) {
-    if (e === 'node_modules' || e === '.git') continue;
+    if (SKIP.has(e)) continue;
     walk(path.join(p, e), out, depth + 1);
   }
 }
