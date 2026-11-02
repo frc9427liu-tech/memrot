@@ -1,6 +1,6 @@
 # memrot
 
-[English](README.md) · **繁體中文**
+[English](../README.md) · **繁體中文**
 
 ![memrot demo](https://raw.githubusercontent.com/frc9427liu-tech/memrot/main/demo.gif)
 

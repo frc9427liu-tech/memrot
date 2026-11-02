@@ -1,6 +1,6 @@
 # memrot
 
-**English** · [繁體中文](README.zh-TW.md) · [繁體中文(見下方)](#繁體中文)
+**English** · [繁體中文](docs/README.zh-TW.md) · [繁體中文(見下方)](#繁體中文)
 
 **Your AI agent's memory rots. memrot finds the rot.**
 
