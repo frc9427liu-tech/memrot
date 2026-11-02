@@ -46,7 +46,7 @@ Exit code is `1` if there is any error-level finding, so it drops into CI or a p
 ## Install
 
 ```
-npx memrot            # no install
+npx @leokai0322/memrot          # no install
 # or
 node memrot.mjs       # it is a single file
 ```
