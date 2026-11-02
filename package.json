@@ -1,6 +1,6 @@
 {
   "name": "@leokai0322/memrot",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Find stale, contradictory and bloated memory in CLAUDE.md / AGENTS.md / MEMORY.md. Zero dependencies, fully local, no AI calls.",
   "bin": {
     "memrot": "memrot.mjs"
@@ -26,5 +26,10 @@
   "homepage": "https://github.com/frc9427liu-tech/memrot#readme",
   "bugs": {
     "url": "https://github.com/frc9427liu-tech/memrot/issues"
-  }
+  },
+  "files": [
+    "memrot.mjs",
+    "README.md",
+    "LICENSE"
+  ]
 }
