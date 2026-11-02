@@ -1,0 +1,10 @@
+{
+  "name": "memrot",
+  "version": "0.1.0",
+  "description": "Find stale, contradictory and bloated memory in CLAUDE.md / AGENTS.md / MEMORY.md. Zero dependencies, fully local, no AI calls.",
+  "bin": { "memrot": "memrot.mjs" },
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "keywords": ["claude-code", "agents-md", "claude-md", "ai-agent", "memory", "linter", "context-engineering"],
+  "license": "MIT"
+}
