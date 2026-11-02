@@ -7,20 +7,6 @@ No AI calls, no cloud, no config. One file.
 
 ![memrot demo](demo.png)
 
-```
-$ npx memrot ~/.claude/projects/me/memory
-
-memory/build-notes.md
-    53  warn   referenced path not found: scripts/deploy-old.ps1  stale-path
-    64  warn   referenced path not found: C:\backups\release-0923.zip  stale-path
-memory/handoff.md
-     1  error  file is not valid UTF-8 — agents will read garbled text  encoding
-
-133 files, ≈144294 tokens · 1 errors, 84 warnings, 201 notes
-```
-
-(That is real output from the author's own memory folder.)
-
 ## Why
 
 Memory tools (claude-mem, mem0, CLAUDE.md…) are great at *storing*. Nobody checks whether what they stored is still **true**.
